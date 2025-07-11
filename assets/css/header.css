@@ -62,3 +62,29 @@
 .information .phone::before {
      background-image: url(/assets/img/icons/phone.svg);
 }
+
+
+@media only screen and (min-width: 768px){
+  
+    .header {
+        display: grid;
+        grid-template-areas: 
+        "photo title"
+        "photo information"
+        ;
+    }
+
+    .header .photo{
+        grid-area: photo;
+        margin: 0 auto;
+    }
+
+    .header .title{
+        grid-area: title;
+        text-align: start;
+    }
+
+     .header .information{
+        grid-area: information;
+    }
+}
